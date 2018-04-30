@@ -1,7 +1,5 @@
 #!/bin/bash
 echo "欢迎使用一键搭建 脚本"
-echo "即将搭建的是Xiaohua Cloud Radar v1.2 地图秒加载版本"
-echo "准备开始安装"
 read -p "回车后开始安装"
 echo "请输入 你服务器的 内网ip" 
 read -p "内网ip： " ip
@@ -26,11 +24,11 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/XiaohuaCN/Cloud-Radar-Plus.git
-cd Cloud-Radar-Plus/
+git clone https://github.com/53336554/xiaohuaban.git
+cd xiaohuaban/
 npm i
 npm i -g pino
 npm install -g forever
 forever start index.js sniff eth0 $ip | pino
 
-echo "搭建完成 ! 请使用你的浏览器打开 服务器的 公网IP 后面加上:20086 查看雷达界面 如我的公网IP是127.0.0.1 那雷达网址就是127.0.0.1:20086"
+echo "搭建完成 ! 
