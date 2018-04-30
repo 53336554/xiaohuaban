@@ -1,10 +1,10 @@
 {
-  "port": 66666,
+  "port": 23333,
   "serve": "static",
   "watchexps": [
     "static/**"
   ],
-  "proxy": "http://localhost:66666",
+  "proxy": "http://localhost:23333",
   "proxypaths": [
    "/api"
   ]
